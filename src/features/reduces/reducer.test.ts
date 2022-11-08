@@ -2,8 +2,8 @@ import { characterReducer } from './reducer';
 import * as ac from './action.creator';
 
 const mockChar = {
-    role: 'King',
     id: 5,
+    role: 'King',
     name: 'Cersei',
     family: 'Lannister',
     age: 37,
@@ -14,8 +14,8 @@ const mockChar = {
 };
 
 const mockChar2 = {
-    role: 'Fighter',
     id: 8,
+    role: 'Fighter',
     name: 'Arya',
     family: 'Stark',
     age: 14,
@@ -57,6 +57,13 @@ describe('Given a state and an action', () => {
     });
 
     describe('When the action is update', () => {
+        test('then return an updated instance of the state', () => {
+            const newState = characterReducer(
+                [mockChar],
+                ac.updateActionCreator(mockChar)
+            );
+            expect(newState).toEqual([mockChar]);
+        });
         test('then if is not in the initialState then return the same instance', () => {
             const newState = characterReducer(
                 [mockChar],
