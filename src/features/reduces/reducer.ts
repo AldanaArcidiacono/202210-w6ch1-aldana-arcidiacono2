@@ -1,8 +1,8 @@
 import { createReducer } from '@reduxjs/toolkit';
-import { Characters } from '../models/data';
+import { Character } from '../models/data';
 import * as ac from './action.creator';
 
-const initialState: Array<Characters> = [];
+const initialState: Array<Character> = [];
 
 export const characterReducer = createReducer(initialState, (builder) => {
     builder.addCase(ac.loadActionCreator, (_state, action) => action.payload);
