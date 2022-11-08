@@ -1,5 +1,5 @@
-import { characterReducer } from './reducer';
 import * as ac from './action.creator';
+import { characterReducer } from './reducer';
 
 const mockChar = {
     id: 5,
