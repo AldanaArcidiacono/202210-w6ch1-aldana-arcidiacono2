@@ -1,5 +1,5 @@
 import { createAction } from '@reduxjs/toolkit';
-import { Character } from '../models/data';
+import { Character } from '../models/character';
 import { actionTypes } from './action.types';
 
 export const loadActionCreator = createAction<Array<Character>>(

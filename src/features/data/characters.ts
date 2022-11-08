@@ -1,0 +1,42 @@
+export const characters = [
+    {
+        id: 1,
+        name: 'Joffrey Baratheon',
+        role: 'King',
+        age: 18,
+        lifeStatus: true,
+        image: './assets/img/joffrey.jpg',
+    },
+    {
+        id: 2,
+        name: 'Jaime Lannister',
+        role: 'Fighter',
+        age: 40,
+        lifeStatus: true,
+        image: './assets/img/jaime.jpg',
+    },
+    {
+        id: 3,
+        name: 'Daenerys Targaryen',
+        role: 'Fighter',
+        age: 24,
+        lifeStatus: true,
+        image: './assets/img/daenerys.jpg',
+    },
+    {
+        id: 4,
+        name: 'Tyrion Targaryen',
+        role: 'Advisor',
+        age: 43,
+        lifeStatus: true,
+        image: './assets/img/tyrion.jpg',
+    },
+    {
+        id: 5,
+        name: 'Bronn Black Waters',
+        role: 'Squire',
+        age: 50,
+        lifeStatus: true,
+        image: './assets/img/bronn.jpg',
+    },
+];

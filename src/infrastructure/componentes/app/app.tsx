@@ -1,5 +1,12 @@
+import { CardList } from '../../../features/components/card.list.tsx/card.list';
+import { Form } from '../../../features/components/form/form';
 import './app.css';
 
 export function App() {
-    return <div className="app">Probando</div>;
+    return (
+        <>
+            <Form></Form>
+            <CardList></CardList>
+        </>
+    );
 }

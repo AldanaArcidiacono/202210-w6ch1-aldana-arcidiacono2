@@ -4,25 +4,19 @@ import { characterReducer } from './reducer';
 const mockChar = {
     id: 5,
     role: 'King',
-    name: 'Cersei',
-    family: 'Lannister',
+    name: 'Cersei Lannister',
     age: 37,
     lifeStatus: true,
-    message: 'You are all gonna die',
     image: '',
-    series: 'GoT',
 };
 
 const mockChar2 = {
     id: 8,
     role: 'Fighter',
-    name: 'Arya',
-    family: 'Stark',
+    name: 'Arya Stark',
     age: 14,
     lifeStatus: true,
-    message: 'First I punch and then I ask',
     image: '',
-    series: 'GoT',
 };
 
 describe('Given a state and an action', () => {
