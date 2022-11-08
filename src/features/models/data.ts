@@ -1,6 +1,6 @@
 export type Characters = {
-    role: string;
     id: number;
+    role: string;
     name: string;
     family: string;
     age: number;
